@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.header-area {
+    height: 8vh;
+    display: grid;
+    grid-template-rows: 1fr;
+    align-content: center;
+}
+
+.header {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: 3fr 3fr 1fr;
+}
+
+#logo {
+    align-self: center;
+}
+
+
+.navigation {
+    align-self: center;
+}
+
+.navbar {
+    list-style-type: none;
+}
+
+.nav-item {
+    display: inline;
+    padding-inline: 1em;
+}
+
+.nav-link {
+    color:black;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 0.75em;
+    line-height: 1.437em;
+    letter-spacing: 1.5px;
+}
+
+.search-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+/* header area completed */
+
+/* hero area starts */
+
+.hero-area {
+    width:100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.hero {
+    width: 97vw;
+    background-color: ghostwhite;
+    justify-self: end;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-text {
+    width: 90%;
+    justify-self: end;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+}
+
+.hero-title {
+    justify-self: center;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
+    align-items: center;
+    gap: 0.6em;
+}
+
+
+.hero-title > h1 {
+    text-align: left;
+    font-size: 6em;
+    line-height: 120%;
+    letter-spacing: 0.08em;
+    color: #094B72;
+
+}
+
+.hero-para {
+    width: 80%;
+    color: #4F4F4F;
+
+}
+
+.hero-para > p {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 158%;
+    letter-spacing: 0.02em;
+}
+
+.btn {
+    background-color: #094B72;
+    color: #F9F8F9;
+    width: 15em;
+    height: 5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+
+.hero-logos {
+    align-self: center;
+    justify-self: start;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "p p"
+    "l1 l2"
+    "l3 l4"
+    ;
+
+    gap: 2em;
+}
+
+.hero-trust-text > p {
+    color: #8B8C8C;
+    font-size: 1.8em;
+    line-height: 150%;
+}
+
+
+.hero-trust-text {
+    grid-area: p;
+}
+
+#airbnb {
+    grid-area: l1;
+}
+
+#hubspot {
+    grid-area: l2;
+}
+
+#microsoft {
+    grid-area: l3;
+}
+
+#google {
+    grid-area: l4;
+}
+
+
+
+.hero-banner {
+    justify-self: start;
+    align-self: center;
+}
+
+
+/* service item starts */
+
+.services-area {
+    background-color: azure;
+    width: 100vw;
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-content: center;
+}
+
+.services {
+    display: grid;
+    width: 80vw;
+    grid-template-columns: 1fr .5fr .5fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a b c"
+    "a d e"
+    ;
+    justify-content: center;
+    align-content: center;
+    /* gap: 2em; */
+}
+
+.services-text {
+    grid-area: a;
+}
+
+.first-item {
+    grid-area: b;
+}
+
+.second-item {
+    grid-area: c;
+}
+
+.third-item {
+    grid-area: d;
+}
+
+.fourth-area {
+    grid-area: e;
+}
