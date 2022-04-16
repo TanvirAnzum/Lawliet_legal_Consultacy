@@ -2,7 +2,6 @@
     margin: 0;
     border: 0;
     box-sizing: border-box;
-    max-width: 100%;
 }
 
 .header-area {
@@ -174,7 +173,7 @@
 
 .services-area {
     background-color: azure;
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     display: grid;
     /* grid-template-columns: 1fr; */
@@ -353,7 +352,7 @@
 .testimonial-area {
     background: #F4FBFF;
     height: 60vh;
-    width: 100%;
+    width: 100vw;
     display: grid;
     grid-template-rows: 1fr;
 }
