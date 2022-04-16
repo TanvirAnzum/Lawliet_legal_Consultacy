@@ -174,16 +174,17 @@
 .services-area {
     background-color: azure;
     width: 100vw;
+    height: 70vh;
     display: grid;
     /* grid-template-columns: 1fr; */
-    grid-template-rows: 1fr;
-    justify-content: center;
+    grid-template-columns: 1fr;
     align-content: center;
 }
 
 .services {
+    justify-self: center;
     display: grid;
-    width: 80vw;
+    width: 84vw;
     grid-template-columns: 1fr .5fr .5fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -192,12 +193,72 @@
     ;
     justify-content: center;
     align-content: center;
-    /* gap: 2em; */
+    gap: 2em;
 }
 
 .services-text {
     grid-area: a;
+    width: 60%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
 }
+
+.services-text > h2 {
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1em;
+    color: #2D2F30;
+    letter-spacing: 0.01em;
+    align-self: end;
+}
+
+.services-text > p {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1em;
+    letter-spacing: 0.01em;
+    color: #8B8C8C;
+}
+
+.box-item {
+    justify-self: start;
+    height: 30vh;
+    width: 15vw;
+    background: #FCFCFC;
+    box-shadow: 0px 18px 58px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 1fr 0.5fr 1fr;
+}
+
+.box-item > img {
+    align-self: center;
+    padding-left: 5%;
+}
+
+.box-item > h3 {
+    align-self: start;
+    padding-left: 5%;
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    color: #363940;
+    width: 70%;
+}
+
+.box-item > p {
+    align-self: center;
+    padding-left: 5%;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 170%;
+    letter-spacing: 0.01px;
+    color: #8B8C8C;
+    width: 90%;
+}
+
 
 .first-item {
     grid-area: b;
@@ -214,3 +275,254 @@
 .fourth-area {
     grid-area: e;
 }
+
+/* services area ends */
+
+/* stats area starts */
+
+.stats-area {
+    width: 100vw;
+    height: 40vh;
+    background: #1282A6;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+}
+
+.stats {
+    width: 60vw;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 0.6fr 0.4fr 1fr;
+    align-items: center;
+}
+
+.stats > h1 {
+    font-weight: 900;
+    font-size: 3.5em;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.stats > p {
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: 0.05em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+    align-self: start;
+}
+
+.stats-items {
+    gap: 2em;
+    justify-self: center;
+    width: 50vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.stat-items-title {
+    font-weight: 800;
+    font-size: 3em;
+    line-height: 133%;
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+.stat-items-desc {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 178%;
+    text-align: center;
+    letter-spacing: 0.001em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #FFFFFF;
+}
+
+/* stats area ends */
+
+/* testimonial area starts */
+
+.testimonial-area {
+    background: #F4FBFF;
+    height: 60vh;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+.testimonial {
+    width: 80%;
+    justify-self: center;
+    display: grid;
+    
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "h h"
+    "t1 t2"
+    ;
+}
+
+.testimonial-title {
+    grid-area: h;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 133%;
+    text-align: center;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #2D2F30;
+    align-self: center;
+    
+}
+
+.t-first {
+    grid-area: t1;
+}
+
+.t-second {
+    grid-area: t2;
+}
+
+.testimonial-items {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    justify-self: center;
+}
+
+.testimonial-box {
+    height: 80%;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    background: whitesmoke;
+    border-radius: 0.625em;
+}
+
+.testimonial-box > h4 {
+    font-weight: 700;
+    font-size: 1.2em;
+    line-height: 200%;
+    /* identical to box height, or 156% */
+
+    text-align: center;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    /* Neutral / Grey 8 */
+
+    color: #151617;
+    padding-bottom: 1em;
+}
+
+.testimonial-box > p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 150%;
+    /* or 171% */
+
+    text-align: center;
+    letter-spacing: 0.01em;
+    font-feature-settings: 'salt' on, 'liga' off;
+
+    /* Neutral / Grey 6 */
+
+    color: #4F4F4F;
+}
+
+.testimonial-img {
+    width: 100%;
+    height: 40%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "i n"
+    "i d"
+    ;
+    gap: 0.5em;
+}
+
+.testimonial-img > img {
+    grid-area: i;
+    justify-self: end;
+}
+
+.testimonial-img > h4 {
+    grid-area: n;
+    justify-self: start;
+    align-self: center;
+}
+
+.testimonial-img > p {
+    grid-area: d;
+    justify-self: start;
+    align-self: start;
+}
+/* testimonial area ends */
+
+/* support-area starts */
+
+.support-area {
+    width: 100vw;
+    height: 40vh;
+    background: ghostwhite;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.support {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.support-text {
+    width: 80%;
+    justify-self: end;
+    align-self: center;
+}
+
+.support-text > h1 {
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 200%;
+    text-align: start;
+    letter-spacing: 0.005em;
+    font-feature-settings: 'salt' on, 'liga' off;
+    color: #2D2F30;
+
+}
+
+.support-text > p {
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+    color: #4F4F4F;
+    padding-bottom: 1em;
+}
+
+.btn-service {
+    width: 10em;
+    height: 3em;
+}
+
+
+
+.support-image {
+    justify-self: end;
+}
+
+.support-image > img {
+    border-radius: 0px 0px 0px 40px;
+}
+
+/* support area ends */
